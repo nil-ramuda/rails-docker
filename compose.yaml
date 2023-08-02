@@ -1,0 +1,32 @@
+version: "3.9"
+
+volumes:
+  db-data:
+
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - "POSTGRES_PASSWORD=postgres"
+    tty: true
+    stdin_open: true
+    depends_on:
+      - db
+    links:
+      - db
+    volumes:
+      - .:/rails-docker-app
+    command: ["rails", "s", "-p", "3000", "-b", "0.0.0.0"]
+
+  db:
+    image: postgres:12
+    volumes:
+      - "db-data:/var/lib/postgresql/data"
+    environment:
+    - POSTGRES_DB=postgres
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=postgres
+
+
