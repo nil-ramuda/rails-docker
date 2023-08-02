@@ -5,7 +5,7 @@ Happiness Chain のDocker課題です。既存のRailsプロジェクトをDocke
 ### 1. 以下のリポジトリを自分のGitHubアカウント配下に設置する
 https://github.com/ihatov08/rails7_docker_template
 - 緑色のボタン`Use this template`をクリックし、`Create a new repository`を選択する
-- 任意のリポジトリ名を入力する
+- 任意のリポジトリ名を入力する(ここでは`rails-docker`とします)
 
 ### 2. 設置したリポジトリをローカルにクローンする
 ```
