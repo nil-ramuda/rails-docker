@@ -1,4 +1,4 @@
-Happiness Chain のDocker課題です。既存のRailsプロジェクトをDocker化します。
+Happiness Chain の課題です。既存のRailsプロジェクトをDocker化します。
 
 # 環境構築方法
 
